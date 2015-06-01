@@ -289,4 +289,4 @@ It might be necessary to simply terminate a launcher host whose docker installat
 ### Issues related to networking
 
 #### Proxies
-If your launcher host is behind proxies, make sure that they will allow this host to connect to dockerhub to download the docker images. Dockerhub may also store docker redirect a "docker pull" request to their main storage servers, so ensure that your proxies allow access to those servers as well.
+If your launcher host is behind proxies, make sure that they will allow this host to connect to dockerhub to download the docker images by adding your proxy settings to "/etc/default/docker" and restarting the docker service. Dockerhub may also store docker redirect a "docker pull" request to their main storage servers, so ensure that your proxies allow access to those servers as well.
